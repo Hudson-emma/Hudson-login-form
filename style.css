@@ -1,0 +1,144 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    #11cb2a,
+    #2575fc
+  ); /* Modern gradient background */
+  color: #fff; /* White text for better contrast */
+}
+
+/* Wrapper for the login form */
+.wrapper {
+  width: 400px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly transparent white background */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Form Heading */
+.wrapper h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for heading */
+}
+
+/* Input Box Styling */
+.input-box,
+.password {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px; /* Spacing between input fields */
+}
+
+.input-box input,
+.password input {
+  width: calc(100% - 40px); /* Adjust width to account for padding and icon */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08); /* Lighter input background */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 0 45px 0 20px; /* Padding for text and icon */
+  font-size: 16px;
+  color: #fff;
+  outline: none; /* Remove outline on focus */
+}
+
+.input-box input::placeholder,
+.password input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+/* Icon Styling (Assuming you're using Boxicons for the icons) */
+.input-box .bx,
+.password .bx {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent icon color */
+}
+
+/* Remember Me and Forgot Password Section */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 20px;
+  align-items: center;
+}
+
+.remember-forgot label input {
+  accent-color: #2575fc; /* Custom checkbox color */
+  margin-right: 5px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.remember-forgot a:hover {
+  color: #a7d9ff; /* Lighter color on hover */
+  text-decoration: underline;
+}
+
+/* Login Button and Register Button */
+.btn {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6a11cb; /* Button text color matching the gradient */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0e0e0; /* Slightly darker white on hover */
+  color: #2575fc;
+}
+
+/* Register Link */
+.register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.register-link p a:hover {
+  color: #a7d9ff; /* Lighter color on hover */
+  text-decoration: underline;
+}
